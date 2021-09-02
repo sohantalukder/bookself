@@ -15,6 +15,7 @@ const searchbtn =  () => {
   /* No value Catch  */
   if (searchText === "") {
     showText.innerHTML = `<h3 class="fw-bolder text-white text-center mb-3 mt-3">Please Search a Valid Book Name</h3>`;
+    containerLibrary('none');
     return;
   }
   searchItem(searchText);
